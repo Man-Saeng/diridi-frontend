@@ -9,11 +9,15 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        labtop: "915px",
+      },
       spacing: {
         ...range(1, 100).reduce((acc, px) => {
           acc[`${px}pxr`] = pxToRem(px);
           return acc;
         }, {}),
+        labtop: "915px",
       },
     },
   },

@@ -2,6 +2,7 @@ import { LogoIcon } from "@/componenets/Common/Icons";
 import { TLayoutProps } from ".";
 import DomainNav from "@/componenets/Common/DomainNav";
 import Link from "next/link";
+import SideNav from "@/componenets/Common/SideNav";
 
 function MainLayout(props: TLayoutProps) {
   return (
@@ -16,7 +17,9 @@ function MainLayout(props: TLayoutProps) {
         />
       </header>
       <main className="main-wrapper">
-        <aside className="sidebar-wrapper"></aside>
+        <aside className="sidebar-wrapper">
+          <SideNav />
+        </aside>
         <article className="article-wrapper">
           {props.children}
           <div className="bottom-nav-wrapper"></div>

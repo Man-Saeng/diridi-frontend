@@ -10,18 +10,24 @@
 
 @layer components {
   .main-header-wrapper {
-    @apply layout-border-gray labtop:block hidden h-56pxr min-h-[56px] w-full border-b-[1px];
+    @apply layout-border-gray hidden h-56pxr min-h-[56px] w-full border-b-[1px] labtop:block;
   }
   .main-wrapper {
-    @apply labtop:max-w-screen-labtop labtop:flex-row mx-auto flex w-full flex-1 self-stretch;
+    @apply mx-auto flex w-full flex-1 self-stretch labtop:max-w-screen-labtop labtop:flex-row;
   }
   .article-wrapper {
-    @apply labtop:layout-border-gray labtop:w-[732px] labtop:border-x-[1px] mx-auto flex w-full flex-col self-stretch;
+    @apply labtop:layout-border-gray mx-auto flex w-full flex-col self-stretch labtop:w-[732px] labtop:border-x-[1px];
   }
   .sidebar-wrapper {
-    @apply labtop:block hidden w-1/4 min-w-[184px];
+    @apply hidden w-1/4 min-w-[184px] labtop:block;
   }
   .bottom-nav-wrapper {
-    @apply layout-border-gray labtop:hidden sticky bottom-0 z-10 h-56pxr w-full self-start border-t-[1px] bg-white;
+    @apply layout-border-gray sticky bottom-0 z-10 h-56pxr w-full self-start border-t-[1px] bg-white labtop:hidden;
+  }
+  .side-nav-item {
+    @apply flex items-center rounded px-16pxr py-11pxr text-gray-400;
+  }
+  .side-nav-item-active {
+    @apply flex items-center rounded bg-violet-100 px-16pxr py-11pxr text-violet-500;
   }
 }

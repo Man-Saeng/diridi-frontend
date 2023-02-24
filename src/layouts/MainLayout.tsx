@@ -1,8 +1,9 @@
-import { LogoIcon } from "@/componenets/Common/Icons";
+import { LogoIcon } from "@/components/Common/Icons";
 import { TLayoutProps } from ".";
-import DomainNav from "@/componenets/Common/DomainNav";
+import DomainNav from "@/components/Common/DomainNav";
 import Link from "next/link";
-import SideNav from "@/componenets/Common/SideNav";
+import SideNav from "@/components/Common/SideNav";
+import BottomNav from "@/components/Common/BottomNav";
 
 function MainLayout(props: TLayoutProps) {
   return (
@@ -10,7 +11,7 @@ function MainLayout(props: TLayoutProps) {
       <header className="main-header-wrapper">
         <DomainNav
           domainIcon={
-            <Link href="/">
+            <Link href="/home">
               <LogoIcon />
             </Link>
           }
@@ -22,7 +23,9 @@ function MainLayout(props: TLayoutProps) {
         </aside>
         <article className="article-wrapper">
           {props.children}
-          <div className="bottom-nav-wrapper"></div>
+          <div className="bottom-nav-wrapper">
+            <BottomNav />
+          </div>
         </article>
       </main>
     </>

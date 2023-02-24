@@ -22,12 +22,18 @@
     @apply hidden w-1/4 min-w-[184px] labtop:block;
   }
   .bottom-nav-wrapper {
-    @apply layout-border-gray sticky bottom-0 z-10 h-56pxr w-full self-start border-t-[1px] bg-white labtop:hidden;
+    @apply layout-border-gray sticky bottom-0 z-10 mt-auto h-56pxr w-full self-start border-t-[1px] bg-white labtop:hidden;
   }
   .side-nav-item {
     @apply flex items-center rounded px-16pxr py-11pxr text-gray-400;
   }
   .side-nav-item-active {
     @apply flex items-center rounded bg-violet-100 px-16pxr py-11pxr text-violet-500;
+  }
+  .bottom-nav-item {
+    @apply text-[12px] font-bold text-gray-400;
+  }
+  .bottom-nav-item-active {
+    @apply text-[12px] font-bold text-violet-500;
   }
 }

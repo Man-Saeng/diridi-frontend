@@ -1,4 +1,4 @@
-function HomeIcon() {
+function LogoIcon() {
   return (
     <svg
       width="90"
@@ -52,4 +52,4 @@ function HomeIcon() {
   );
 }
 
-export default HomeIcon;
+export default LogoIcon;

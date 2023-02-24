@@ -1,4 +1,4 @@
-import { HomeIcon } from "@/componenets/Common/Icons";
+import { LogoIcon } from "@/componenets/Common/Icons";
 import { TLayoutProps } from ".";
 import DomainNav from "@/componenets/Common/DomainNav";
 import Link from "next/link";
@@ -10,7 +10,7 @@ function MainLayout(props: TLayoutProps) {
         <DomainNav
           domainIcon={
             <Link href="/">
-              <HomeIcon />
+              <LogoIcon />
             </Link>
           }
         />

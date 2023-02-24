@@ -1,12 +1,12 @@
 import { HomeIcon } from "@/componenets/Common/Icons";
 import { TLayoutProps } from ".";
-import MainNav from "@/componenets/Common/MainNav";
+import DomainNav from "@/componenets/Common/DomainNav";
 
 function MainLayout(props: TLayoutProps) {
   return (
     <>
       <header className="main-header-wrapper">
-        <MainNav domainIcon={<HomeIcon />} />
+        <DomainNav domainIcon={<HomeIcon />} />
       </header>
       <main className="main-wrapper">
         <aside className="sidebar-wrapper"></aside>
